@@ -6,6 +6,10 @@ body {
   color: #F0C7B1;
 }
 
+.main-offwhite {
+  background-color: #EEEFEA;
+}
+
 .main-gray {
   background-color: #3C3C3C;
 }
@@ -16,6 +20,10 @@ body {
 
 .main-purple {
   background-color: #49384A;
+}
+
+.purple-offfwhite-grad {
+  background: linear-gradient(#49384A 90%, #eeefea 50%);
 }
 
 .main-green {
@@ -29,6 +37,39 @@ body {
 .font-reem {
   font-family: 'Reem Kufi', sans-serif;
 }
+
+@media only screen and (min-width: 1024px) {
+  .about-me-p {
+    padding-top: 8em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-me {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    margin-bottom: -50px;
+  }
+}
+
+.about-description {
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 163.19%;
+/* or 29px */
+
+letter-spacing: 0.165em;
+
+color: #111111;
+}
+
+
 
 .menu {
   font-family: Reem Kufi;
@@ -240,4 +281,257 @@ body {
 
 html.sr .load-hidden {
   visibility: hidden;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+/* Rock Paper Scisscors */
+.score-board {
+  border: 2px solid;
+  width: 200px;
+  margin: 20px auto;
+  color: white;
+  font-size: 42px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 20px 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background: #ad2d2d;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+.badge-label {
+  background: #39753e;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
+#comp-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+#scoreboard-label {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  font-size: 20px;
+}
+.result {
+  font-size: 25px;
+  font-weight: 600px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.choices {
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 30px 45px 30px 45px;
+  margin: 2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: #b8cbea;
+  transition: .2s;
+}
+
+.choices img {
+  filter: invert(1);
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.success {
+  border: 5px solid green;
+  box-shadow: 0 0 0 10px rgb(0, 85, 0);
+  transition: .2s ease;
+}
+
+.failure {
+  border: 5px solid rgb(209, 17, 17);
+  box-shadow: 0 0 0 10px rgb(117, 7, 7);
+  transition: .2s ease;
+}
+
+.draw {
+  border: 5px solid rgb(184, 155, 101);
+  box-shadow: 0 0 0 10px rgb(119, 107, 36);
+  transition: .2s ease;
+}
+
+.success-text {
+  box-shadow: 0 0 0 10px rgb(0, 85, 0);
+  transition: .2s ease;
+}
+
+.failure-text {
+  box-shadow: 0 0 0 10px rgb(117, 7, 7);
+  transition: .2s ease;
+}
+
+.draw-text {
+  box-shadow: 0 0 0 10px rgb(119, 107, 36);
+  transition: .2s ease;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+    left: 0;
+    right: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.display-choices {
+  text-align: center;
+  display: flex;
+}
+
+.choice-message {
+  display: flex;
+  font-size: 20px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   width: fit-content;
+   margin: 0 auto;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ a {
+  text-decoration: none;
+}
+
+.win-lose {
+  justify-content: center;
+    align-items: center;
+    height: 240px;
+    display: flex;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 88%;
+  transition: 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+.wrapper {
+  padding: 1em;
+  margin: 10px;
+}
+
+}
+@media only screen and (max-width: 600px) {
+header h1 {
+    font-weight: 800;
+  font-size: 20px;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+}
+
+.animate__animated.animate__tada {
+  --animate-delay: 2s;
 }

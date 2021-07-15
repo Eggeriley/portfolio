@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F0C7B1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#49384A">
   <title>Hi, I'm Riley</title>
 
   <!-- JS -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="custom.css">
@@ -54,10 +56,18 @@
       <div class="flex">
         <ul style="flex: 1; justify-content: center; flex-wrap: nowrap; margin-bottom: 3em;"
           class="invisible flex menu text-white px-8 lg:pl-12 lg:visible animate__animated animate__backInDown animate__delay-5s">
-          <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400">My Work</li>
+          <div class="dropdown">
+            <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400 dropbtn"><a href="#mywork">My
+                Work</a></li>
+            <div class="dropdown-content">
+              <a href="#mywork">Link 1</a>
+              <a href="#quinault">Link 2</a>
+              <a href="#ncmi">Link 3</a>
+            </div>
+          </div>
           <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400">About Me</li>
           <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400">Contact</li>
-          <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400">Learn More</li>
+          <li style="white-space: nowrap;" class="mr-8 px-4 hover:text-indigo-400">Can you beat me?</li>
         </ul>
         <div style="flex: 1;" class="flex-1 flex"></div>
       </div>
@@ -289,7 +299,7 @@
 
   <!-- Portfolio-->
 
-  <section class="main-gray item-show">
+  <section id="mywork" class="main-gray item-show">
     <!-- Firebrand Church-->
 
     <div class="bg-gray-800 rounded-2xl portfolio-item relative section-margin">
@@ -337,107 +347,221 @@
     </div>
   </section>
   <div style="z-index: -2" class="main-green relative">
-  <section class="pi-2 item-show">
-    <!-- Quinault Ocean Fleet-->
+    <section id="quinault" class="pi-2 item-show">
+      <!-- Quinault Ocean Fleet-->
 
-    <div class="bg-gray-800 rounded-2xl portfolio-item relative section-margin">
-      <div class="blocks">
-        <img src="img/blobs.png" alt="blocks">
+      <div class="bg-gray-800 rounded-2xl portfolio-item relative section-margin">
+        <div class="blocks">
+          <img src="img/blobs.png" alt="blocks">
+        </div>
+        <div class="p-6">
+          <div>
+
+          </div>
+          <span class="text-red-400 text-right float-right lg:text-2xl">MOBILE & WEB APP</span>
+          <h3 class="text-3xl item-title text-white font-bold">Quinault Ocean Fleet</h3>
+          <p class="text-xl text-indigo-400 pt-4 font-light">A powerful community driven product</p>
+          <div class="container mt-8">
+            <img src="img/final_60e79239f39c5300d3a7e889_874950.gif" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">John Doe</div>
+            </div>
+          </div>
+          <div class="portfolio-description mb-6 mt-12 text-gray-200">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor blandit at hac ac est, quis at dignissim.
+              Euismod consectetur ut vitae eget massa. Mi vulputate suspendisse sed nibh aliquam duis quam commodo
+              pretium. Vitae tellus, eget consectetur nulla placerat massa feugiat lectus tincidunt. Quis velit non odio
+              et porttitor amet. Neque elementum duis sed aenean urna enim tellus adipiscing. Sapien.
+            </p>
+          </div>
+          <div id="pills" class="flex mt-12">
+            <div style="background-color: #275DAD
+          ;"
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
+              responsive design
+            </div>
+            <div style="background-color: #4D4D4D
+          ;"
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
+              online learning
+            </div>
+            <div
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm lg:px-4 bg-green-500">
+              community groups
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="p-6">
-        <div>
+    </section>
+  </div>
+  <div style="z-index: -2" class="purple-offfwhite-grad relative">
+    <section id="ncmi" class="pi-3 item-show">
+      <!-- NCMI-->
 
+      <div class="bg-gray-800 rounded-2xl portfolio-item relative section-margin">
+        <div class="blocks">
+          <img src="img/blocks.png" alt="blocks">
         </div>
-        <span class="text-red-400 text-right float-right lg:text-2xl">MOBILE & WEB APP</span>
-        <h3 class="text-3xl item-title text-white font-bold">Quinault Ocean Fleet</h3>
-        <p class="text-xl text-indigo-400 pt-4 font-light">A powerful community driven product</p>
-        <div class="container mt-8">
-          <img src="img/final_60e79239f39c5300d3a7e889_874950.gif" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">John Doe</div>
+        <div class="p-6">
+          <div>
+
+          </div>
+          <span class="text-red-400 text-right float-right lg:text-2xl">WEBSITE</span>
+          <h3 class="text-3xl item-title text-white font-bold">Firebrand Church</h3>
+          <p class="text-xl text-indigo-400 pt-4 font-light">A powerful community driven product</p>
+          <div class="container mt-8">
+            <img src="img/FIREBRANRCHURCHSCREENSHOT.png" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">John Doe</div>
+            </div>
+          </div>
+          <div class="portfolio-description mb-6 mt-12 text-gray-200">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor blandit at hac ac est, quis at dignissim.
+              Euismod consectetur ut vitae eget massa. Mi vulputate suspendisse sed nibh aliquam duis quam commodo
+              pretium. Vitae tellus, eget consectetur nulla placerat massa feugiat lectus tincidunt. Quis velit non odio
+              et porttitor amet. Neque elementum duis sed aenean urna enim tellus adipiscing. Sapien.
+            </p>
+          </div>
+          <div id="pills" class="flex mt-12">
+            <div style="background-color: #275DAD
+          ;"
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
+              responsive design
+            </div>
+            <div style="background-color: #4D4D4D
+          ;"
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
+              online learning
+            </div>
+            <div
+              class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm lg:px-4 bg-green-500">
+              community groups
+            </div>
           </div>
         </div>
-        <div class="portfolio-description mb-6 mt-12 text-gray-200">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor blandit at hac ac est, quis at dignissim.
-            Euismod consectetur ut vitae eget massa. Mi vulputate suspendisse sed nibh aliquam duis quam commodo
-            pretium. Vitae tellus, eget consectetur nulla placerat massa feugiat lectus tincidunt. Quis velit non odio
-            et porttitor amet. Neque elementum duis sed aenean urna enim tellus adipiscing. Sapien.
+      </div>
+    </section>
+  </div>
+  <section class="main-offwhite about-me-p filter	transition duration-100">
+    <div class="color-sep">
+    <div class="pt-12 flex items-center justify-center container mx-auto">
+      <div class="text-center font-reem about-me text-gray-800 text-4xl">Learn A Little About Me</div>
+    </div>
+    <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
+      <div class="max-w-lg w-full mb-10 md:mb-6 column-50">
+        <img class="object-cover object-center rounded" alt="hero" src="img/aboutme.jpeg">
+      </div>
+      <div
+        class="lg:flex-grow lg:pl-24 flex flex-col md:items-start md:text-left items-center text-center column-50">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">I am a Tacoma born Native 🏔
+          <br class="hidden lg:inline-block"><span class="font-light text-2xl underline">and a passionate artist 🎨.</span>
+        </h1>
+        <div class="about-description lg:pr-8">
+          <p class="mb-8 leading-relaxed">a web designer/developer 🌐. I have had the pleasure of aprenticing under a
+            local web developer and working on plenty of hands on projects with non-profits, small businessness and
+            larger organizations. Throughout my carreer I have learned the importance of good communcation, teamwork,
+            and keeping your sense of humor.
           </p>
-        </div>
-        <div id="pills" class="flex mt-12">
-          <div style="background-color: #275DAD
-          ;"
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
-            responsive design
-          </div>
-          <div style="background-color: #4D4D4D
-          ;"
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
-            online learning
-          </div>
-          <div
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm lg:px-4 bg-green-500">
-            community groups
-          </div>
+          <p>
+            Ever project requires a unique solution at the intersection of functionality, design, and budget. I am
+            always striving to find the best solution for the project at hand. Web design doesn’t need to be inhuman and
+            distant. It can and should be vibrant, human and an extension of you.
+          </p>
         </div>
       </div>
     </div>
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-4xl font-medium title-font mb-4 text-gray-900 font-reem">Contact me</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            </div>
+           
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   </section>
-</div>
-<div style="z-index: -2" class="main-purple relative">
-  <section class="pi-3 item-show">
-    <!-- Firebrand Church-->
 
-    <div class="bg-gray-800 rounded-2xl portfolio-item relative section-margin">
-      <div class="blocks">
-        <img src="img/blocks.png" alt="blocks">
+  <!-- 
+  <section class="p-12 bg-gradient-to-r from-gray-700 to-gray-800">
+    <div class="header">
+      <h1 style="padding-bottom: 4em" class="flex items-center justify-center py-8 text-4xl text-gray-100">Rock (👊) Paper (✋)  Scissors (✌️)</h1>
+    </div>
+    <div class="wrapper">
+
+
+      <div class="score-board">
+        <div id="scoreboard-label">Scoarboard</div>
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id="user-score">0</span><span>:</span><span id="computer-score">0</span>
       </div>
-      <div class="p-6">
-        <div>
 
+    <div id="win-lose-pannel">
+    <div id="changing-text" class="">
+      <div class="display-choices">
+        <div id="user" class="choice-message">
+          &nbsp;
         </div>
-        <span class="text-red-400 text-right float-right lg:text-2xl">WEBSITE</span>
-        <h3 class="text-3xl item-title text-white font-bold">Firebrand Church</h3>
-        <p class="text-xl text-indigo-400 pt-4 font-light">A powerful community driven product</p>
-        <div class="container mt-8">
-          <img src="img/FIREBRANRCHURCHSCREENSHOT.png" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">John Doe</div>
-          </div>
-        </div>
-        <div class="portfolio-description mb-6 mt-12 text-gray-200">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor blandit at hac ac est, quis at dignissim.
-            Euismod consectetur ut vitae eget massa. Mi vulputate suspendisse sed nibh aliquam duis quam commodo
-            pretium. Vitae tellus, eget consectetur nulla placerat massa feugiat lectus tincidunt. Quis velit non odio
-            et porttitor amet. Neque elementum duis sed aenean urna enim tellus adipiscing. Sapien.
-          </p>
-        </div>
-        <div id="pills" class="flex mt-12">
-          <div style="background-color: #275DAD
-          ;"
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
-            responsive design
-          </div>
-          <div style="background-color: #4D4D4D
-          ;"
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm px-lg:px-4">
-            online learning
-          </div>
-          <div
-            class="rounded-xl cursor-default hover:opacity-80 mr-2 p-2 text-xs lg:p-3 lg:mr-4 lg:rounded-3xl text-white lg:text-sm lg:px-4 bg-green-500">
-            community groups
-          </div>
+        <div id="comp" class="choice-message">
+          &nbsp;
         </div>
       </div>
+      <div class="result"><h2>Test your skills against my <span class="underline--magical" style="font-weight: bolder;">SuperComputer<span style="
+        font-family: monospace;
+    ">()</span></span> 💻🌐💻</h2></div>
     </div>
 
+      <div id="choices" class="choices">
+        <div id="r" class="choice tooltip">
+          <span id="r-message" class="tooltiptext">Choose Rock</span>
+          <img style="height: 100px" src="img/rock.png" alt=""/>
+        </div>
+        <div id="p" class="choice tooltip">
+          <span id="p-message" class="tooltiptext">Choose Paper</span>
+          <img style="height: 100px" src="img/paper.png" alt=""/>
+        </div>
+        <div id="s" class="choice tooltip">
+          <span id="s-message" class="tooltiptext">Choose Scissors</span>
+          <img style="height: 100px" src="img/scissors.png" alt=""/>
+        </div> 
+      </div>
+    </div>
   </section>
-</div>
-<!-- Before body-->
+  -->
+  <!-- Before body-->
   <script src="js/scroll.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/app.js"charset="utf-8"></script>
 </body>
 
 </html>

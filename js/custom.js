@@ -1,6 +1,5 @@
 let person_svg = document.getElementById('person');
-person_svg.addEventListener('mouseover', fallingPerson);
-person_svg.addEventListener('mouseout', backIn)
+person_svg.addEventListener('click', fallingPerson);
 let p1 = document.getElementById('Polygon 1');
 let p2 = document.getElementById('Polygon 2');
 let p3 = document.getElementById('Polygon 3');
@@ -22,10 +21,9 @@ function fallingPerson () {
   person_svg.classList.remove('animate__delay-4s')
   person_svg.classList.add('animate__delay-2s')
   person_svg.classList.add('animate__hinge')
-}
-
-function backIn() {
   setTimeout(() => { person_svg.classList.remove('animate__hinge') }, 2000);
+  var audio = new Audio('audio/mixkit-soft-quick-punch-2151.wav');
+  audio.play();
 }
 
 function mountainPulse() {
@@ -64,3 +62,13 @@ function pulse3() {
   star3.classList.add('animate__flash');
   setTimeout(() => { star3.classList.remove('animate__flash') }, 2000);
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
